@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gen-Z Chatbot</title>
+
+  <!-- Google Fonts: Import Inter font for styling -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Setup section: User defines context and API key -->
+  <div class="card" id="setupSection">
+    <h2>🧠 Set Up Your Chatbot</h2>
+    <textarea id="context" rows="3" placeholder="e.g., You are a DSA tutor."></textarea>
+    <input id="apiKey" placeholder="Your Gemini API Key (optional)" />
+    <button onclick="startChat()">Start Chatting</button>
+  </div>
+
+  <!-- Chat section: Hidden by default, shown after setup -->
+  <div class="card" id="chatSection">
+    <h2>💬 Chat with Bot</h2>
+    <div id="chatWindow" style="display: flex; flex-direction: column;"></div>
+    <div class="typing" id="typingIndicator" style="display: none;">Bot is typing...</div>
+    <input id="userInput" placeholder="Ask something..." onkeypress="handleKeyPress(event)" />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
