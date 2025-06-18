@@ -1,6 +1,10 @@
 # AI Assistant Creation
 
 This project aims to develop an AI-powered assistant capable of helping users with various tasks, including answering questions, generating content, and providing programming support.
+  
+## Deployment
+
+You can try the live app here: [AI Assistant Creation](https://abhishek-maurya-d.github.io/AI-Assistant-Creation/)
 
 ## Features
 
